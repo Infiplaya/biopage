@@ -27,7 +27,6 @@ body {
 main {
     position: relative;
     opacity: 0;
-    filter: blur(10px);
     transition: opacity 2s ease-in-out, filter 2s ease-in-out;
 }
 
@@ -53,11 +52,11 @@ header > h1 {
     font-weight: bold;
     border-radius: 1em;
     background-color: #000a;
-    color: #fff;
+    backdrop-filter: blur(1px) saturate(160%) contrast(180%);
+    color: #05f2f2;
     padding: 0.5em 1em;
     border: 1px solid #014040;
     box-shadow: #014040 0px 2px 10px 0px;
-    backdrop-filter: blur(1px) saturate(160%) contrast(180%);
 }
 
 ul {
@@ -69,14 +68,14 @@ ul {
 }
 
 ul > li {
-    background-color: #fffa;
-    backdrop-filter: blur(10px) saturate(160%) contrast(180%);
+    background-color: rgba(0, 0, 0, 0.3);
     border-radius: 10em;
     padding: 1em;
     margin: 1.4em 0;
     text-align: center;
-    border: 1px solid #014040;
-    box-shadow: #014040 0px 2px 50px 0px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    box-shadow: #fdf901 0px 2px 6px 0px;
     font-weight: bold;
 }
 
@@ -95,6 +94,6 @@ ul > li > a #home {
 
 
 a {
-    color: #014040;
+    color: #05f2f2;
     text-decoration:  none;
 }
