@@ -8,30 +8,8 @@
     <link rel="stylesheet" href="index.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
-    <script>
-        window.addEventListener('DOMContentLoaded', () => {
-            VANTA.FOG({
-                el: "#vanta",
-                mouseControls: true,
-                touchControls: true,
-                gyroControls: false,
-                minHeight: 200.00,
-                minWidth: 200.00,
-                highlightColor: 0xf20574,
-                midtoneColor: 0x05f2f2,
-                lowlightColor: 0x014040,
-                baseColor: 0x014040,
-                blurFactor: 0.50,
-                speed: 1,
-                })
-
-            setTimeout(() => {
-                const main = document.querySelector('main')
-                main.style.opacity = 1
-                main.style.filter = 'blur(0px)'
-            }, 200)
-        })
-    </script>
+    <script src="https://kit.fontawesome.com/f35a579ab0.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </head>
 <body>
     <div id="vanta"></div>
@@ -45,26 +23,26 @@
             <ul>
                 <li>
                     <a href="https://infiplaya.github.io/" target="_blank">
-                        <img id="home" src="images/home.svg" alt="Portfolio" width="15">
+                        <i class="fa-brands fa-youtube"></i>
                         Portfolio
                     </a>
                 </li>
                 <li>
                     <a href="https://github.com/Infiplaya" target="_blank">
-                        <img src="images/github.svg" alt="Github" width="35">
+                        <i class="fa-brands fa-github"></i>
                         Github
                     </a>
                 </li>
                 <li>
                     <a href="https://www.instagram.com/plosoban/" target="_blank">
-                        <img src="images/instagram.svg" alt="Instagram" width="35">
+                        <i class="fa-brands fa-instagram"></i>
                         Instagram
                     </a>
             
                 </li>
                 <li>
                     <a href="https://twitter.com/sobanpablo" target="_blank">
-                        <img src="images/twitter.svg" alt="Twitter" width="35">
+                        <i class="fa-brands fa-twitter"></i>
                         Twitter
                     </a>
                 </li>
